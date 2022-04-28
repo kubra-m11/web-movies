@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* #kutu-1{font-size: 20px;}
+      #kutu-1 p {
+        
+        font-size: 1.5em;
+        padding: 1em; Burada verdiğimiz padding em değer olarak içinde bulunduğu değere göre oran alır.Yani p'nin font-size'ı kutu-1de ki 20px'lin 1.5katını aldığı için paddingin gördüğü değer 30 olmuş olur ve değeri ona göre değer verir.
+      } */
+
+      html {
+        font-size: 10px;
+        /* font-size: 62.5%;    Kullanıcının tarayıcıda varsayılan yazı boyutunu değiştirdiğinde otomatik olarak sayfadaki yazılarında o boyuta geçmesi için font-size değerine verdiğimizin değerin yüzdelik karşılığını girmeliyiz.*/
+      }
+      body {
+        font-size: 1.6rem;
+      }
+      @media (min-width: 576px) {
+        html {
+          font-size: 12px;
+        }
+        #kutu-1 h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        html {
+          font-size: 14px;
+        }
+      }
+      /* #kutu-1 p {
+        font-size: 2rem;
+      }
+      #kutu-1 h2 {
+        font-size: 3rem;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="kutu-1">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo esse eaque
+        laboriosam quis a officiis quia! Atque minima placeat culpa adipisci?
+        Molestias perferendis cumque adipisci nisi similique ex sed excepturi.
+      </p>
+    </div>
+
+    <div id="kutu-2">
+      <h3>Lorem, ipsum dolor.</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio provident
+        voluptate aperiam? Iusto maiores sapiente perferendis consectetur error
+        facere officiis, est ratione, qui voluptatibus eaque repellat id
+        similique architecto aliquam.
+      </p>
+    </div>
+  </body>
+</html>
